@@ -1,4 +1,4 @@
-enum DoorState {
+const enum DoorState {
     Open = 3,
     Closed = 'cerrado'
 }
