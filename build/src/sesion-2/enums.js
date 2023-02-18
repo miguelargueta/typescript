@@ -1,8 +1,8 @@
 "use strict";
 var DoorState;
 (function (DoorState) {
-    DoorState[DoorState["Open"] = 0] = "Open";
-    DoorState[DoorState["Closed"] = 1] = "Closed";
+    DoorState[DoorState["Open"] = 3] = "Open";
+    DoorState["Closed"] = "cerrado";
 })(DoorState || (DoorState = {}));
 function checkDoorState(state) {
     console.log(`El valor del estado es ${state}`);

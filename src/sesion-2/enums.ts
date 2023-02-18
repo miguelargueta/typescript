@@ -1,6 +1,6 @@
 enum DoorState {
-    Open,
-    Closed 
+    Open = 3,
+    Closed = 'cerrado'
 }
 
 function checkDoorState( state: DoorState) {
