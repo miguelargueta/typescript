@@ -3,7 +3,7 @@ var myCallback = (text) => {
     return() => {console.log('funcion anonima')}
 }
 
-function withCallbackArg(message, callbackfn){
+function withCallbackArg(message: string, callbackfn: (text: string) void){
     console.log ('con el mensaje, ' + message)
     callbackfn(message + 'del withcallback')
 }
