@@ -16,10 +16,11 @@ let complexObnj = {
     bStr: 'name',
     cBool: true
 };
+// para destructurar un objeto es necesrio que
+//las variables se llamen igual que las propiedades
+//no importa el orden
 let { aNum, bStr, cBool } = complexObnj;
 console.log(aNum);
 console.log(bStr);
 console.log(cBool);
 console.log(complexObnj);
-function myF(aNum, bStr, cBool) {
-}
