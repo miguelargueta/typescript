@@ -1,14 +1,17 @@
-var myCallback = (text) => {
-    console.log('myCallback es llamada : ' + text)
-    return() => {console.log('funcion anonima')}
+let myCallback = (text: string) => {
+    console.log('myCallback called with ' + text)
 }
 
-function withCallbackArg(message: string, callbackfn: (text: string) void){
-    console.log ('con el mensaje, ' + message)
-    callbackfn(message + 'del withcallback')
+// el tipado de las funciones ignora el nombre de los
+// parámetros pero no la cantidad o el tipo de valor
+// de los mismos
+function withCallbackArg(message: string, callbackfn: (text: string) => void) {
+    console.log('withCallback called, message ' + message)
+    callbackfn(message + ' from withCallback')
 }
 
-//console.log(myCallback('texto inicial'))
+// console.log(myCallback('initial text'))
 // no da error
-console.log(withCallbackArg('texto inicial', myCallback))
-
+console.log(withCallbackArg('initial text', myCallback))
+// da error por que espera que sea una función
+// console.log(withCallbackArg('initial text', 'myCallback'))
