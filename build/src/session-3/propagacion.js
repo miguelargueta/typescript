@@ -9,4 +9,4 @@ console.log(obj3);
 let firstArry = [1, 2, 3];
 let secondArry = [4, 5, 6];
 let thirdArry = [...firstArry, secondArry];
-console.log('thirdArry =', thirdArry);
+console.log('thirdArry =' + thirdArry);

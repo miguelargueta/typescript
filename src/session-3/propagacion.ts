@@ -13,4 +13,4 @@ let firstArry: number[] = [1, 2, 3]
 let secondArry: number[] = [4, 5, 6]
 let thirdArry = [...firstArry, secondArry]
 
-console.log ('thirdArry =' thirdArry)
+console.log ('thirdArry =' + thirdArry)
